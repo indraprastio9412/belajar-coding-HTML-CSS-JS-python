@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar bootstap</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container my-5">
+      <div class="container mt-5">
+        <form>
+          <div class="row mb-3">
+            <label for="namaLengkap" class="col-sm-3 col-form-label"
+              >Nama Lengkap</label
+            >
+            <div class="col-sm-9">
+              <input
+                type="text"
+                class="form-control"
+                id="namaLengkap"
+                placeholder="Nama Lengkap"
+                value="Ahmad Ryan"
+              />
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="namaPanggilan" class="col-sm-3 col-form-label"
+              >Nama Panggilan</label
+            >
+            <div class="col-sm-9">
+              <input
+                type="text"
+                class="form-control"
+                id="namaPanggilan"
+                placeholder="Nama Panggilan"
+                value="Ryan"
+              />
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="tempatLahir" class="col-sm-3 col-form-label"
+              >Tempat Lahir</label
+            >
+            <div class="col-sm-9">
+              <input
+                type="text"
+                class="form-control"
+                id="tempatLahir"
+                placeholder="Tempat Lahir"
+                value="Osaka"
+              />
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="tanggalLahir" class="col-sm-3 col-form-label"
+              >Tanggal Lahir</label
+            >
+            <div class="col-sm-9 d-flex">
+              <select class="form-select me-2" id="tanggalLahir">
+                <option selected>1</option>
+                <!-- Option lainnya -->
+              </select>
+              <select class="form-select me-2">
+                <option selected>Januari</option>
+                <!-- Option lainnya -->
+              </select>
+              <select class="form-select">
+                <option selected>2021</option>
+                <!-- Option lainnya -->
+              </select>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="alamatRumah" class="col-sm-3 col-form-label"
+              >Alamat Rumah</label
+            >
+            <div class="col-sm-9">
+              <input
+                type="text"
+                class="form-control"
+                id="alamatRumah"
+                placeholder="Alamat Rumah"
+                value="Ponorogo"
+              />
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label class="col-sm-3 col-form-label">Jenis Kelamin</label>
+            <div class="col-sm-9">
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="jenisKelamin"
+                  id="lakiLaki"
+                  value="Laki-laki"
+                  checked
+                />
+                <label class="form-check-label" for="lakiLaki">Laki-laki</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="jenisKelamin"
+                  id="perempuan"
+                  value="Perempuan"
+                />
+                <label class="form-check-label" for="perempuan"
+                  >Perempuan</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="asalSekolah" class="col-sm-3 col-form-label"
+              >Asal Sekolah</label
+            >
+            <div class="col-sm-9">
+              <input
+                type="text"
+                class="form-control"
+                id="asalSekolah"
+                placeholder="Asal Sekolah"
+                value="STM Pengelasan"
+              />
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="nilaiUAN" class="col-sm-3 col-form-label"
+              >Nilai UAN</label
+            >
+            <div class="col-sm-9">
+              <input
+                type="text"
+                class="form-control"
+                id="nilaiUAN"
+                placeholder="Nilai UAN"
+                value="4.00"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-9 offset-sm-3">
+              <button type="submit" class="btn btn-primary">Simpan</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
