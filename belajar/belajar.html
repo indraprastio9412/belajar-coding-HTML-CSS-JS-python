@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Info Mahasiswa</title>
+</head>
+<body>
+    <button
+      type="button"
+      onclick="document.getElementById('tanggal').innerHTML = displayInfo()"
+    >
+    Click me to display Date and Time.
+    </button>
+
+    <div id="tanggal"></div>
+
+    <script>
+      function displayInfo() {
+        var mahasiswa = { nama: "Budi", nim: "5920123002", prodi: "Ilkom", umur: 21 };
+        
+        // Menyusun informasi
+        var info = "Nama: " + mahasiswa.nama + ", NIM: " + mahasiswa.nim + ", Prodi: " + mahasiswa.prodi + ", Umur: " + mahasiswa.umur + ". ";
+
+        // Menentukan keterangan berdasarkan umur
+        if (mahasiswa.umur >= 18) {
+          info += "Keterangan: " + mahasiswa.nama + " sudah dewasa.";
+        } else {
+          info += "Keterangan: " + mahasiswa.nama + " belum dewasa.";
+        }
+
+        return info;
+      }
+    </script>
+</body>
+</html>
