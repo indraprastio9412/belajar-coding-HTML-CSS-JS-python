@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <bod>
+
+        <h2>My first JavaScript</h2>
+
+        <button type="button"
+        onclick="document.getElementById('tanggal').innerHTML  = kabisat">
+        Click me to display data and Time.</button>
+
+        <div id="tanggal"></div>
+
+    </bod>
+    <script>
+        tahun = new Date().getFullYear()
+        sepuluh_tahun_lagi = tahun + 4
+        tahun = 2018
+        kabisat = ((tahun % 4) == 0) ? "tahun kabisat" : "bukan tahun kabbisat"
+
+    </script>
+</html>
