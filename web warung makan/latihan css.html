@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warung Makan Enak</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+      header {
+        background-color: #4caf50;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+      }
+      nav {
+        background-color: #333;
+        color: white;
+        padding: 0.5rem;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        margin: 0 15px;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+      nav ul li a:hover {
+        color: #4caf50;
+      }
+      main {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+      }
+      section {
+        margin-bottom: 30px;
+      }
+      h2 {
+        color: #4caf50;
+        border-bottom: 2px solid #4caf50;
+        padding-bottom: 10px;
+      }
+      .menu-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+      .menu-item {
+        border: 1px solid #ddd;
+        padding: 15px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .menu-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      }
+      .menu-item img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
+      .menu-item h3 {
+        margin-top: 0;
+        color: #4caf50;
+        font-size: 1.4rem;
+      }
+      .menu-item p {
+        margin: 5px 0;
+      }
+      .menu-item .price {
+        font-weight: bold;
+        color: #e44d26;
+        font-size: 1.2rem;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+      @media (max-width: 600px) {
+        nav ul {
+          flex-direction: column;
+          align-items: center;
+        }
+        nav ul li {
+          margin: 5px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>
+        selamat datang di warung indra prastio😎🍵 harga receh tapi rasa ngak
+        recehan👌
+      </h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#tentang">Tentang Kami</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="beranda">
+        <h2>Selamat Datang di Warung Makan indra prastio</h2>
+        <h1>Nikmati hidangan lezat dengan harga terjangkau!</h1>
+      </section>
+      <section id="menu">
+        <h2>Menu Kami🤤</h2>
+        <div class="menu-container">
+          <div class="menu-item">
+            <img src="nasi.jpg" alt="Nasi Goreng" />
+            <h3>Nasi Goreng</h3>
+            <p>Nasi goreng spesial dengan telur dan ayam</p>
+            <p class="price">Harga: Rp25.000</p>
+          </div>
+          <div class="menu-item">
+            <img src="mie.jpg" alt="Mie Ayam" />
+            <h3>Mie Ayam</h3>
+            <p>Mie ayam dengan potongan ayam yang lezat</p>
+            <p class="price">Harga: Rp20.000</p>
+          </div>
+          <div class="menu-item">
+            <img src="soto ayam.jpg" alt="Soto Ayam" />
+            <h3>Soto Ayam</h3>
+            <p>Soto ayam dengan kuah gurih dan segar</p>
+            <p class="price">Harga: Rp22.000</p>
+          </div>
+          <div class="menu-item">
+            <img src="cantik1.jpg" alt="calon istri kamu" />
+            <h3>idaman mu</h3>
+            <p>
+              berbakti kepada orang tua dan sekua membantu orang lain selain itu
+              dia suka menabung
+            </p>
+            <p class="price">Harga: rajin solat</p>
+          </div>
+        </div>
+      </section>
+      <section id="tentang">
+        <h2>Tentang Kami</h2>
+        <h3>
+          Warung Makn indra prastio adalah warung makan sederhana yang
+          menyajikan makanan lezat dengan bahan-bahan berkualitas dan kalian
+          bisa pesan secara onlline📞 dan kami siap melayani anda
+          terimakasih💗👍.
+        </h3>
+      </section>
+      <section
+        id=" hubungi kontak saya apabila anda lapar dan kami siap melayani anda hingga kenyang"
+      >
+        <h2>Kontak</h2>
+        <p>Alamat: Jl.desa setiling,sdn sekedek timuk masjit.lingkok lime</p>
+        <p>Telepon: 083112282090</p>
+        <p>Email: indraprastio9412@gmail.com</p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Warung Makan indra prastio. Hak Cipta Dilindungi.</p>
+    </footer>
+  </body>
+</html>
