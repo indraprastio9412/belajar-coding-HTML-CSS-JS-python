@@ -1,0 +1,15 @@
+.above {
+  display: flex;
+  justify-content: center; /* Memusatkan secara horizontal */
+  align-items: center; /* Memusatkan secara vertikal (jika tinggi ditentukan) */
+  height: 100vh; /* Mengatur tinggi kontainer */
+}
+
+.foto {
+  margin: 10px; /* Menambahkan jarak antara foto */
+}
+
+.foto img {
+  max-width: 100%; /* Agar gambar responsif */
+  height: auto; /* Menjaga rasio aspek */
+}
